@@ -19,6 +19,13 @@ class CartController extends Controller
         return $products;
     }
 
+     public function listProducts()
+    {
+        $products = Product::all();
+        
+        return $products;
+    }
+
     //for add and update cart
     public function addToCart($id)
     {
